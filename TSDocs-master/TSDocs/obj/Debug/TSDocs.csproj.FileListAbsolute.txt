@@ -1,0 +1,9 @@
+C:\Users\Clay\Desktop\Terraria Dev Stuff\TSDocs-master\TSDocs-master\TSDocs\obj\Debug\TSDocs.csprojResolveAssemblyReference.cache
+C:\Users\Clay\Desktop\Terraria Dev Stuff\TSDocs-master\TSDocs-master\Build\TSDocs.dll
+C:\Users\Clay\Desktop\Terraria Dev Stuff\TSDocs-master\TSDocs-master\Build\TSDocs.pdb
+C:\Users\Clay\Desktop\Terraria Dev Stuff\TSDocs-master\TSDocs-master\TSDocs\obj\Debug\TSDocs.dll
+C:\Users\Clay\Desktop\Terraria Dev Stuff\TSDocs-master\TSDocs-master\TSDocs\obj\Debug\TSDocs.pdb
+G:\Documents\Terraria_Dev\Plugins\TSDocs-master\TSDocs-master\Build\TSDocs.dll
+G:\Documents\Terraria_Dev\Plugins\TSDocs-master\TSDocs-master\Build\TSDocs.pdb
+G:\Documents\Terraria_Dev\Plugins\TSDocs-master\TSDocs-master\TSDocs\obj\Debug\TSDocs.dll
+G:\Documents\Terraria_Dev\Plugins\TSDocs-master\TSDocs-master\TSDocs\obj\Debug\TSDocs.pdb
