@@ -124,8 +124,8 @@ namespace TSDocs
 			}
 			catch (Exception ex)
 			{
-				Log.ConsoleError("[TSDocs] Error loading Config/Files, Check logs for more details!");
-				Log.Error(ex.ToString());
+				TShock.Log.ConsoleError("[TSDocs] Error loading Config/Files, Check logs for more details!");
+                TShock.Log.Error(ex.ToString());
 				return false;
 			}
 		}
@@ -143,8 +143,8 @@ namespace TSDocs
 			catch (Exception ex)
 			{
 				args.Player.SendMessage("Error: Config failed to reload, Check logs!", Color.IndianRed);
-				Log.Error("[TSDocs] Config Exception:");
-				Log.Error(ex.ToString());
+                TShock.Log.Error("[TSDocs] Config Exception:");
+                TShock.Log.Error(ex.ToString());
 			}
 		}
 		#endregion

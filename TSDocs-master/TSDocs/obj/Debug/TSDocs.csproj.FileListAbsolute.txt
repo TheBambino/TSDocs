@@ -7,3 +7,8 @@ G:\Documents\Terraria_Dev\Plugins\TSDocs-master\TSDocs-master\Build\TSDocs.dll
 G:\Documents\Terraria_Dev\Plugins\TSDocs-master\TSDocs-master\Build\TSDocs.pdb
 G:\Documents\Terraria_Dev\Plugins\TSDocs-master\TSDocs-master\TSDocs\obj\Debug\TSDocs.dll
 G:\Documents\Terraria_Dev\Plugins\TSDocs-master\TSDocs-master\TSDocs\obj\Debug\TSDocs.pdb
+C:\Users\Zaicon\Documents\tShockPlugins\TSDocs-Master\TSDocs-master\TSDocs\obj\Debug\TSDocs.csprojResolveAssemblyReference.cache
+C:\Users\Zaicon\Documents\tShockPlugins\TSDocs-Master\TSDocs-master\TSDocs\obj\Debug\TSDocs.dll
+C:\Users\Zaicon\Documents\tShockPlugins\TSDocs-Master\TSDocs-master\TSDocs\obj\Debug\TSDocs.pdb
+C:\Users\Zaicon\Documents\tShockPlugins\TSDocs-Master\TSDocs-master\Build\TSDocs.dll
+C:\Users\Zaicon\Documents\tShockPlugins\TSDocs-Master\TSDocs-master\Build\TSDocs.pdb

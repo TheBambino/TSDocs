@@ -7,7 +7,7 @@ using TShockAPI;
 
 namespace TSDocs
 {
-    [ApiVersion(1, 16)]
+    [ApiVersion(1, 19)]
     public class TSDocs : TerrariaPlugin
     {
         public static TSConfig getConfig { get; set; }
@@ -31,7 +31,7 @@ namespace TSDocs
 
         public override Version Version
         {
-            get { return new Version("2.0"); }
+            get { return new Version("2.1"); }
         }
 
         public override void Initialize()
@@ -126,7 +126,7 @@ namespace TSDocs
 			catch (Exception ex)
 			{
 				args.Player.SendErrorMessage("An error occoured while writing to the news file! Check the logs.", Color.IndianRed);
-				Log.Error("[TSDocs] error while writing to the news file: \n" + ex.ToString());
+                TShock.Log.Error("[TSDocs] error while writing to the news file: \n" + ex.ToString());
 			}
 
 		}
@@ -155,7 +155,7 @@ namespace TSDocs
 			catch (Exception ex)
 			{
 				args.Player.SendErrorMessage("An error occoured while reading the news file! Check the logs.", Color.IndianRed);
-				Log.Error("[TSDocs] error while reading the news file: \n" + ex.ToString());
+                TShock.Log.Error("[TSDocs] error while reading the news file: \n" + ex.ToString());
 			}
 		}
 		#endregion
@@ -205,8 +205,8 @@ namespace TSDocs
 			}
 			catch (Exception ex)
 			{
-				Log.ConsoleError("Something when wrong when showing {0} a motd. Check the logs.".SFormat(player.Name));
-				Log.Error(ex.ToString());
+                TShock.Log.ConsoleError("Something when wrong when showing {0} a motd. Check the logs.".SFormat(player.Name));
+                TShock.Log.Error(ex.ToString());
 			}
         }
         #endregion
@@ -222,7 +222,7 @@ namespace TSDocs
                 if ((e.Text == command.command || e.Text.StartsWith(command.command + " ")) && command.file != "")
                 {
                     e.Handled = true;
-                    Log.Info("{0} executed: {1}".SFormat(TShock.Players[e.Who].Name, command.command));
+                    TShock.Log.Info("{0} executed: {1}".SFormat(TShock.Players[e.Who].Name, command.command));
                     ShowFile(command, e.Text, TShock.Players[e.Who]);
                     break;
                 }
@@ -267,8 +267,8 @@ namespace TSDocs
 			}
 			catch (Exception ex)
 			{
-				Log.ConsoleError("Something when wrong when showing {0} \"{1}\". Check the Logs.".SFormat(player.Name, command.command));
-				Log.Error(ex.ToString());
+                TShock.Log.ConsoleError("Something when wrong when showing {0} \"{1}\". Check the Logs.".SFormat(player.Name, command.command));
+                TShock.Log.Error(ex.ToString());
 			}
 		}
         #endregion
