@@ -7,11 +7,11 @@ using TShockAPI;
 
 namespace TSDocs
 {
-    [ApiVersion(1, 19)]
+    [ApiVersion(1, 20)]
     public class TSDocs : TerrariaPlugin
     {
         public static TSConfig getConfig { get; set; }
-        public static string ConfigPath { get { return Path.Combine(TShockAPI.TShock.SavePath, "TSDocs/Config.json"); } }
+        public static string ConfigPath { get { return Path.Combine(TShock.SavePath, "TSDocs/Config.json"); } }
 		public static string SavePath { get; set; }
 
         public override string Name
@@ -24,14 +24,14 @@ namespace TSDocs
             get { return "by Scavenger"; }
         }
 
-        public override string Description /* online files coming soon, I Hope ;D */
+        public override string Description
         {
-            get { return "Powerful Documentation and MOTD Plugin. Show information from a file or online using a command that you define."; }
+            get { return "Powerful Documentation and MOTD Plugin. Show information from a file using a command that you define."; }
         }
 
         public override Version Version
         {
-            get { return new Version("2.1"); }
+            get { return new Version("2.1.1"); }
         }
 
         public override void Initialize()
