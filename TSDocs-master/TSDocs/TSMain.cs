@@ -7,7 +7,7 @@ using TShockAPI;
 
 namespace TSDocs
 {
-    [ApiVersion(1, 20)]
+    [ApiVersion(1, 21)]
     public class TSDocs : TerrariaPlugin
     {
         public static TSConfig getConfig { get; set; }
@@ -31,7 +31,7 @@ namespace TSDocs
 
         public override Version Version
         {
-            get { return new Version("2.1.1"); }
+            get { return new Version("2.1.2"); }
         }
 
         public override void Initialize()
