@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * Original plugin by Scavenger.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -7,7 +11,7 @@ using TShockAPI;
 
 namespace TSDocs
 {
-    [ApiVersion(1, 21)]
+    [ApiVersion(1, 22)]
     public class TSDocs : TerrariaPlugin
     {
         public static TSConfig getConfig { get; set; }
@@ -21,7 +25,7 @@ namespace TSDocs
 
         public override string Author
         {
-            get { return "by Scavenger"; }
+            get { return "Zaicon"; }
         }
 
         public override string Description
@@ -31,7 +35,7 @@ namespace TSDocs
 
         public override Version Version
         {
-            get { return new Version("2.1.2"); }
+            get { return new Version("2.1.3"); }
         }
 
         public override void Initialize()
