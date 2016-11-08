@@ -59,16 +59,27 @@ namespace TSDocs
         public TSDocs(Main game) : base(game)
         {
             Order = 1;
-
-            getConfig = new TSConfig();
-
+			
 			SavePath = Path.Combine(TShockAPI.TShock.SavePath, "TSDocs");
         }
 
         #region Initialize
         void OnInitialize(EventArgs e)
         {
-            Commands.ChatCommands.Add(new Command("tsdocs.reload", TSConfig.CMDreload, "tsdocs"));
+			getConfig = new TSConfig();
+			try
+			{
+				TSConfig.Re_LoadConfig();
+				TSPlayer.Server.SendSuccessMessage("Loaded TSDocs Config!");
+			}
+			catch (Exception ex)
+			{
+				TSPlayer.Server.SendErrorMessage("Error: Config failed to reload, Check logs!");
+				TShock.Log.Error("[TSDocs] Config Exception:");
+				TShock.Log.Error(ex.ToString());
+			}
+
+			Commands.ChatCommands.Add(new Command("tsdocs.reload", TSConfig.CMDreload, "tsdocs"));
             Commands.ChatCommands.Add(new Command("tsdocs.news", CMDsetnews, "setnews", "snews"));
 			Commands.ChatCommands.Add(new Command("tsdocs.news", CMDgetnews, "getnews", "gnews"));
         }

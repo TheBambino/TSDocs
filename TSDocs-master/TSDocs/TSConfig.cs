@@ -69,7 +69,7 @@ namespace TSDocs
         public static Action<TSConfig> ConfigRead;
 
 		#region (Re)Load Config
-		private static void Re_LoadConfig()
+		public static void Re_LoadConfig()
 		{
 			//config
 			if (!Directory.Exists(TSDocs.SavePath))
