@@ -2,6 +2,7 @@
  * Original plugin by Scavenger.
  */
 
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,7 +12,7 @@ using TShockAPI;
 
 namespace TSDocs
 {
-    [ApiVersion(1, 25)]
+    [ApiVersion(2,0)]
     public class TSDocs : TerrariaPlugin
     {
         public static TSConfig getConfig { get; set; }

@@ -3,6 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using TShockAPI;
+using Microsoft.Xna.Framework;
 
 namespace TSDocs
 {
@@ -43,9 +44,8 @@ namespace TSDocs
             using (var sr = new StreamReader(stream))
             {
                 var cf = JsonConvert.DeserializeObject<TSConfig>(sr.ReadToEnd());
-                if (ConfigRead != null)
-                    ConfigRead(cf);
-                return cf;
+				ConfigRead?.Invoke(cf);
+				return cf;
             }
         }
 
